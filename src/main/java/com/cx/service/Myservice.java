@@ -4,6 +4,7 @@ import com.cx.bean.User;
 import com.cx.dao.UserDao;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.config.CustomEditorConfigurer;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -30,4 +31,5 @@ public class Myservice {
         List<User> users = userDao.UserList();
         return users;
     }
+
 }
